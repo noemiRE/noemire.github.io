@@ -8,50 +8,54 @@
     <title>Noemi Ramos</title>
 </head>
 <body>
-    <header class="bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
-        <nav class="flex flex-col lg:flex-row justify-between py-8 mx-10 lg:mx-24">
+    <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
+        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden">
             <div class="flex justify-between">
               <span class="font-bold text-primary">NR</span>
-              <button class="block lg:hidden"><img src="icon/menu.svg" alt=""></button>
+              <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtion duration-500"></button>
             </div>
-            <ul class="flex space-x-5 text-sm text-secundary flex-col lg:flex-row">
-                <li class="font-bold text-primary"><a href="">Inicio</a></li>
-                <li><a href="">Acerca de mi</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Portafolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contacto</a></li>
+            <ul class="flex items-center space-x-0 md:space-x-5 text-sm text-secundary flex-col md:flex-row h-0 md:h-auto overflow-hidden">
+                <li class="font-bold text-primary py-2 md:py-0 mt-5 md:mt-0"><a href="">Inicio</a></li>
+                <li class="py-2 md:py-0"><a href="">Acerca de mi</a></li>
+                <li class="py-2 md:py-0"><a href="">Habilidades</a></li>
+                <li class="py-2 md:py-0"><a href="">Servicios</a></li>
+                <li class="py-2 md:py-0"><a href="">Portafolio</a></li>
+                <li class="py-2 md:py-0"><a href="">Blog</a></li>
+                <li class="py-2 md:py-0"><a href="">Contacto</a></li>
             </ul>
         </nav>
-        <section class="mx-24 relative">
-            <div class="text-white mt-20">
-                <p class="text-xs">Hola, mi nombre se</p>
-                <h1 class="text-3xl font-bold mt-8">NOEMI RAMOS</h1>
-                <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, excepturi.</p>
-                <button class="px-6 py-2 bg-red-500 mt-8 rounded-full text-sm">CONTACTAR</button>
+        <section class="px-10 md:px-24 relative pt-10 md:pt-20 min-h-screen">
+            <div id="continer-img" class="static md:absolute inset-0 flex justify-center items-start xl:items-center mt-16 md:mt-0">
+                <img id="img-perfil" class="w-auto md:w-1/2  mt-0 md:mt-32" src="img/perfil.jpg" alt="">
             </div>
-            <div class="flex flex-col items-end space-y-8 absolute right-0 mt-5">
-                <span class="text-sm text-secundary text-vertical inline-flex mb-2 ">buscame en</span>
-                <a href="" class="w-4 h-4 inline-flex ">
-                    <img src="icon/linkedin.svg" alt="" class="object-contain w-full h-full">
-                </a> 
-                <a href="" class="w-4 h-4 inline-flex">
-                    <img src="icon/github.svg" alt="" class="object-contain w-full h-full">
-                </a> 
-                <a href="" class="w-4 h-4 inline-flex">
-                    <img src="icon/instagram.svg" alt="" class="object-contain w-full h-full">
-                </a>
+            <div class="text-white static md:relative mt-8 md:mt-16 z-9 text-center md:text-left">
+                <p class="text-xs">Hola, mi nombre es</p>
+                <h1 class="text-xl sm:text-3xl font-bold mt-8">NOEMI RAMOS</h1>
+                <p class="text-sm mt-2 w-full md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, excepturi.
+                </p>
+                <button class="py-2 px-6 button-primary mt-8 rounded-full text-sm focus:outline-none ">CONTACTAR</button>
+                
+                <div id="social-media" class="flex flex-col items-end space-y-8 absolute right-0 top-0 md:top-auto md:mt-5 mr-10 md:mr-0">
+                    <span class="text-sm text-secundary text-vertical mb-2 hidden md:inline-flex ">buscame en</span>
+                    <a href="" class="w-4 h-4 inline-flex ">
+                        <img src="icon/linkedin.svg" alt="" class="object-contain w-full h-full">
+                    </a> 
+                    <a href="" class="w-4 h-4 inline-flex">
+                        <img src="icon/github.svg" alt="" class="object-contain w-full h-full">
+                    </a> 
+                    <a href="" class="w-4 h-4 inline-flex">
+                        <img src="icon/instagram.svg" alt="" class="object-contain w-full h-full">
+                    </a>
+                </div>
             </div>
-        </section>
-        
+        </section>       
     </header>
     
     <section>
         <div>
-            
+            <h1>hola</h1> 
         </div>
     </section>
-    <h1>Hola mundo.</h1>
+    <script src="js/app.js"></script>
 </body>
 </html>
