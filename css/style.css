@@ -32,6 +32,9 @@
 .bg-dark {
     background-color: #1A1A1A;
 }
+.bg-gray {
+    background-color: #1E1E1E;
+}
 .bg-menu {
     background-image: url('../icon/menu.svg');
 }
@@ -54,6 +57,30 @@
     justify-content: center;
     align-items: center;
 }
+.button-secundary {
+    border-color: var(--primary);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary);
+    transition: background .5s;
+}
+.button-secundary:hover {
+    background-color: var(--primary);
+    color: black;
+}
+.img-profile {
+    width: 300px;
+    height: 300px;
+}
+.bg-menu-gradient {
+    background: linear-gradient( to bottom, #101010 65%, #10101000) !important;
+    transition: 5s;
+}
+.bg-menu-transparent {
+    background: transparent !important;
+    transition: 5s;
+}
+
 @media screen and (max-width:767px) {
     #social-media {
         margin-top: 35%;

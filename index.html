@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
-        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden">
+        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden transtion duration-500 bg-transparent">
             <div class="flex justify-between">
               <span class="font-bold text-primary">NR</span>
               <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtion duration-500"></button>
@@ -50,10 +50,33 @@
             </div>
         </section>       
     </header>
-    
-    <section>
-        <div>
-            <h1>hola</h1> 
+    <section class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
+        <div class="flex space-x-20 items-center">
+            <div class="img-profile rounded-full overflow-hidden"> 
+                <img class="object-cover w-full h-full object-center" src="img//perfil.jpg" alt="">
+            </div>
+            <div class="w-2/3 text-secundary">
+                <h2 class="text-2xl font-bold text-white">Acerca de mi</h2>
+                <div class="my-4">
+                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam a, libero sed architecto tenetur dicta accusamus non molestiae placeat illum alias modi, at sapiente id.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat odio hic enim rem molestiae.</p>
+                </div>
+                <div class="flex px-10 py-8 mb-10 bg-gray">
+                    <div class="flex-1">
+                        <p class="py-2"><strong class="text-primary mr-4">Edad: </strong>21 años</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Teléfono: </strong>+51 986 147 315</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Experiencia: </strong>2 años</p>
+                    </div>  
+                    <div class="flex-1"> 
+                        <p class="py-2"><strong class="text-primary mr-4">Dirección: </strong>Lima, Lima - Lince</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Freelance: </strong>disponible</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Email: </strong>noemifelicitaramos@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="px-6 py-2 rounded-full border-2 button-secundary " href="#">descargar cv</a>
+                </div>
+            </div>
         </div>
     </section>
     <script src="js/app.js"></script>

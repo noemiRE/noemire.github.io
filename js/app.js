@@ -11,4 +11,10 @@ function showMenu(){
     // qs('#menu').classList.toggle("contract-menu")
 }
 
-
+window.onscroll = () => {
+    if(window.scrollY > 0){
+        qs('#menu').classList.add("bg-menu-gradient");
+    } else {
+        qs("#menu").classList.toggle("bg-menu-gradient");
+    }
+}
