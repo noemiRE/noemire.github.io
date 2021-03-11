@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
-        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden transtion duration-500 bg-transparent">
+        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden bg-transparent">
             <div class="flex justify-between">
               <span class="font-bold text-primary">NR</span>
               <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtion duration-500"></button>
@@ -50,21 +50,21 @@
             </div>
         </section>       
     </header>
-    <section class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
-        <div class="flex items-center flex-wrap flex-col lg:flex-row">
-            <div class="mr-0 lg:mr-20 img-profile rounded-full overflow-hidden"> 
+    <section id="about-me"  class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
+        <div class="flex items-center flex-wrap flex-col lg:flex-row w-full">
+            <div class="mr-0 lg:mr-20 my-10 lg:mb-0 img-profile rounded-full overflow-hidden"> 
                 <img class="object-cover w-full h-full object-center" src="img//perfil.jpg" alt="">
             </div>
-            <div class="flex-1 text-secundary">
+            <div class="flex-1 text-secundary w-full">
                 <h2 class="text-2xl font-bold text-white">Acerca de mi</h2>
-                <div class="my-4">
+                <div id="description" class="my-4 text-justify">
                     <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam a, libero sed architecto tenetur dicta accusamus non molestiae placeat illum alias modi, at sapiente id.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat odio hic enim rem molestiae.</p>
                 </div>
-                <div class="flex px-10 py-8 mb-10 bg-gray flex-wrap justify-between">
-                    <div class="flex-initial mr-5">
+                <div id="data" class="flex px-5 sm:px-10 py-8 mb-10 bg-gray flex-wrap justify-between">
+                    <div class="flex-initial mr-0 sm:mr-5">
                         <p class="py-2"><strong class="text-primary mr-4">Edad: </strong>21 años</p>
-                        <p class="py-2"><strong class="text-primary mr-4">Teléfono: </strong>+51 986 147 315</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Teléfono: </strong>+51 986 147 015</p>
                         <p class="py-2"><strong class="text-primary mr-4">Experiencia: </strong>2 años</p>
                     </div>  
                     <div class="flex-initial"> 
@@ -73,7 +73,7 @@
                         <p class="py-2"><strong class="text-primary mr-4">Email: </strong>noemifelicitaramos@gmail.com</p>
                     </div>
                 </div>
-                <div>
+                <div class="mb-10 text-center sm:text-left">
                     <a class="px-6 py-2 rounded-full border-2 button-secundary " href="#">descargar cv</a>
                 </div>
             </div>

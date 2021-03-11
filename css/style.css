@@ -74,11 +74,11 @@
 }
 .bg-menu-gradient {
     background: linear-gradient( to bottom, #101010 65%, #10101000) !important;
-    transition: 5s;
+    transition: background 5s;
 }
 .bg-menu-transparent {
     background: transparent !important;
-    transition: 5s;
+    transition: background 5s;
 }
 
 @media screen and (max-width:767px) {
@@ -128,6 +128,29 @@
 @media screen and (min-width:360px) and (max-width:639px) {
     section div h1 {
         font-size: 1.875rem !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .img-profile {
+        width: 200px;
+        height: 200px;
+    }
+    #about-me #data div p {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-me #description p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:360px) {
+
+    #about-me {
+        padding: 0 20px;
+    }
+    #data {
+        font-size: 13px;
     }
 }
 /* w-11/12 sm:w-1/2 md:w-1/2 */
