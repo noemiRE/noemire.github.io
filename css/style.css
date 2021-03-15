@@ -59,7 +59,6 @@
 }
 .button-secundary {
     border-color: var(--primary);
-    text-transform: uppercase;
     font-weight: bold;
     color: var(--primary);
     transition: background .5s;
@@ -79,6 +78,39 @@
 .bg-menu-transparent {
     background: transparent !important;
     transition: background 5s;
+}
+.item-select {
+    font-weight: bold;
+    position: relative;
+}
+.item-select::before {
+    width: 35% !important;
+}
+#menu-potfolio ul li {
+    position: relative;
+    cursor: pointer;
+}
+#menu-potfolio ul li:hover::before {
+    width: 100%;
+}
+#menu-potfolio ul li::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--primary);
+    width: 0%;
+    height: 100%;
+    top: 25%;
+    transition: 1s;
+}
+.item div div {
+    opacity: 0;
+    transition: .5s;
+}
+.item div div:hover {
+    opacity: 1;
+}
+.item div img {
+    cursor: pointer;
 }
 
 @media screen and (max-width:767px) {
