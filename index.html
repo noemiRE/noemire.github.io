@@ -9,10 +9,10 @@
 </head>
 <body>
     <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
-        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden bg-transparent">
+        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-20 overflow-hidden bg-transparent">
             <div class="flex justify-between">
               <span class="font-bold text-primary">NR</span>
-              <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtion duration-500"></button>
+              <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtions duration-500"></button> <!--ESMITH --- LA CLASE ES TRANSITIONS CON "S"-->
             </div>
             <ul class="flex items-center space-x-0 md:space-x-5 text-sm text-secundary flex-col md:flex-row h-0 md:h-auto overflow-hidden">
                 <li class="font-bold text-primary py-2 md:py-0 mt-5 md:mt-0"><a href="">Inicio</a></li>
@@ -142,21 +142,25 @@
     </section>
     <section id="portfolio"  class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
         <div class="w-full mt-32">
-            <div class="flex items-end py-10">
+            <div class="flex flex-col lg:flex-row items-start lg:items-end py-10">
                 <h2 class="text-2xl font-bold text-white text-center sm:text-left" >Mi portafolio</h2>
-                <div id="menu-potfolio">
-                    <ul class="flex text-sm mx-10 text-white">
-                        <li class="mx-3 item-select">Todo</li>
-                        <li class="mx-3">Diseño</li>
-                        <li class="mx-3">Fotografia</li>
-                        <li class="mx-3">Illustraciones</li>
-                        <li class="mx-3">Videos</li>
-                        <li class="mx-3">Paginas Web</li>
-                        <li class="mx-3">App</li>
+                <div id="menu-potfolio" class="ml-auto sm:mx-auto relative z-10">
+                    <button class="inline-flex items-center justify-between text-white px-6 py-2 box-shadow focus:outline-none sm:hidden">
+                        <span class="mr-8">Todos</span>
+                        <img src="icon/triangulo.svg" alt="triangulo">
+                    </button>
+                    <ul class="flex text-sm mx-0 lg:mx-10 text-white flex-col sm:flex-row px-5 pt-0 sm:px-0 sm:py-4 absolute sm:static bg-dark right-0 mt-2 sm:mt-0 h-0 sm:h-auto overflow-y-scroll sm:overflow-hidden transitions duration-500"><!--ESMITH -- MODIFICA LA CLASE h-32 por h-0 , pt-2 por pt-0  --- y AGREGA transitions y duration-->
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3 item-select">Todo</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Diseño</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Fotografia</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Illustraciones</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Videos</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Paginas Web</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">App</li>
                     </ul>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-2.5 px-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-2.5 px-0 sm:px-10 lg:px-24" id="grid-portfolio"> <!--ESMITH-->
                 <div class="h-52 item">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="">
