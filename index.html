@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
-        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-10 overflow-hidden bg-transparent">
+        <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-20 overflow-hidden bg-transparent">
             <div class="flex justify-between">
               <span class="font-bold text-primary">NR</span>
               <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtion duration-500"></button>
@@ -18,9 +18,9 @@
                 <li class="font-bold text-primary py-2 md:py-0 mt-5 md:mt-0"><a href="">Inicio</a></li>
                 <li class="py-2 md:py-0"><a href="">Acerca de mi</a></li>
                 <li class="py-2 md:py-0"><a href="">Habilidades</a></li>
-                <li class="py-2 md:py-0"><a href="">Servicios</a></li>
+                <!-- <li class="py-2 md:py-0"><a href="">Servicios</a></li> -->
                 <li class="py-2 md:py-0"><a href="">Portafolio</a></li>
-                <li class="py-2 md:py-0"><a href="">Blog</a></li>
+                <!-- <li class="py-2 md:py-0"><a href="">Blog</a></li> -->
                 <li class="py-2 md:py-0"><a href="">Contacto</a></li>
             </ul>
         </nav>
@@ -31,7 +31,8 @@
             <div class="text-white static md:relative mt-8 md:mt-16 z-9 text-center md:text-left">
                 <p class="text-xs">Hola, mi nombre es</p>
                 <h1 class="text-xl sm:text-3xl font-bold mt-8">NOEMI RAMOS</h1>
-                <p class="text-sm mt-2 w-full md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, excepturi.
+                <p class="text-sm mt-2 w-full md:w-1/2">Soy Desarrollador Mobile/Web. 
+                    Realizo proyectos a nivel personal como grupal, plasmando mis conocimientos, a través del código.
                 </p>
                 <button class="py-2 px-6 button-primary mt-8 rounded-full text-sm focus:outline-none ">CONTACTAR</button>
                 
@@ -58,13 +59,13 @@
             <div class="flex-1 text-secundary w-full">
                 <h2 class="text-2xl font-bold text-white">Acerca de mi</h2>
                 <div id="description" class="my-4 text-justify">
-                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam a, libero sed architecto tenetur dicta accusamus non molestiae placeat illum alias modi, at sapiente id.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat odio hic enim rem molestiae.</p>
+                    <p class="mb-4">Soy Desarrollador Mobile/Web, me desempeño en lo que mas me apasiona, la creación de contenido como videos e ilustraciones, creacion de contenido de redes sociales y sobre todo amante al diseño.</p>
+                    <p>En mis ratos libres disfruto estar al aire libre y contemplar la naturaleza, soy aficionada por la fotografía, por los videojuegos y las peliculas.</p>
                 </div>
                 <div id="data" class="flex px-5 sm:px-10 py-8 mb-10 bg-gray flex-wrap justify-between">
                     <div class="flex-initial mr-0 sm:mr-5">
                         <p class="py-2"><strong class="text-primary mr-4">Edad: </strong>21 años</p>
-                        <p class="py-2"><strong class="text-primary mr-4">Teléfono: </strong>+51 986 147 015</p>
+                        <p class="py-2"><strong class="text-primary mr-4">Teléfono: </strong>+51 986147015</p>
                         <p class="py-2"><strong class="text-primary mr-4">Experiencia: </strong>2 años</p>
                     </div>  
                     <div class="flex-initial"> 
@@ -82,7 +83,8 @@
     <section id="skills"  class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
         <div class="w-full mt-20">
             <h2 class="text-2xl font-bold text-white text-center sm:text-left" >Mis habilidades</h2>
-            <div class="flex justify-around h-auto sm:h-80 items-center my-4 lg:my-0 xl:my-8 flex-wrap">
+            <!-- //h-auto sm:h-80 -->
+                <div class="flex justify-around h-auto items-center my-4 lg:my-0 xl:my-8 flex-wrap">
                 <div class="text-center m-5">
                     <div class="bg-gray w-28 h-28 p-2">
                         <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
@@ -90,6 +92,14 @@
                         </div>
                     </div>
                 <span class="inline-block py-4 text-white text-sm">Android Studio</span>
+                </div>
+                <div class="text-center m-5">
+                    <div class="bg-gray w-28 h-28 p-2">
+                        <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
+                            <img class="object-contain object-center w-full h-full p-5" src="icon/flutter.svg" alt="">
+                        </div>
+                    </div>
+                <span class="inline-block py-4 text-white text-sm">Flutter</span>
                 </div>
                 <div class="text-center m-5">
                     <div class="bg-gray w-28 h-28 p-2">
@@ -106,6 +116,30 @@
                         </div>
                     </div>
                 <span class="inline-block py-4 text-white text-sm">Php</span>
+                </div>
+                <div class="text-center m-5">
+                    <div class="bg-gray w-28 h-28 p-2">
+                        <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
+                            <img class="object-contain object-center w-full h-full p-3" src="icon/github.svg" alt="">
+                        </div>
+                    </div>
+                <span class="inline-block py-4 text-white text-sm">Git/GitHub</span>
+                </div>
+                <div class="text-center m-5">
+                    <div class="bg-gray w-28 h-28 p-2">
+                        <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
+                            <img class="object-contain object-center w-full h-full p-5" src="icon/html5.svg" alt="">
+                        </div>
+                    </div>
+                <span class="inline-block py-4 text-white text-sm">Html5</span>
+                </div>
+                <div class="text-center m-5">
+                    <div class="bg-gray w-28 h-28 p-2">
+                        <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
+                            <img class="object-contain object-center w-full h-full p-5" src="icon/css3.svg" alt="">
+                        </div>
+                    </div>
+                <span class="inline-block py-4 text-white text-sm">Css3</span>
                 </div>
             </div>
             <div class="flex justify-around flex-wrap">
@@ -142,21 +176,26 @@
     </section>
     <section id="portfolio"  class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
         <div class="w-full mt-32">
-            <div class="flex items-end py-10">
+            <div class="flex items-start lg:items-end py-10 flex-col lg:flex-row">
                 <h2 class="text-2xl font-bold text-white text-center sm:text-left" >Mi portafolio</h2>
-                <div id="menu-potfolio">
-                    <ul class="flex text-sm mx-10 text-white">
-                        <li class="mx-3 item-select">Todo</li>
-                        <li class="mx-3">Diseño</li>
-                        <li class="mx-3">Fotografia</li>
-                        <li class="mx-3">Illustraciones</li>
-                        <li class="mx-3">Videos</li>
-                        <li class="mx-3">Paginas Web</li>
-                        <li class="mx-3">App</li>
+                <div id="menu-potfolio" class="ml-auto sm:mx-auto relative z-10">
+                    <button class="inline-flex items-center text-white justify-between px-6 py-2 focus:outline-none box-shadow sm:hidden">Todos
+                        <span class="mr-8">
+                            <img src="icon/backbutton.svg" alt="">
+                        </span>
+                    </button>
+                    <ul class="flex text-sm mx-0 lg:mx-10 text-white flex-col sm:flex-row box-shadow px-5 sm:px-0 bg-dark absolute sm:static pt-2 sm:py-4 right-0 mt-2 sm:mt-0 h-32 sm:h-auto overflow-y-scroll sm:overflow-hidden">     
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 item-select py-2 sm:py-0 border-b sm:border-none border-gray-700">Todo</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">Diseño</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">Fotografia</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">Illustraciones</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">Videos</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">App</li>
+                        <li class="px-3 sm:px-0 mx-0 sm:mx-3 py-2 sm:py-0 border-b sm:border-none border-gray-700">Paginas Web</li>
                     </ul>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-2.5 px-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 px-24">
                 <div class="h-52 item">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="">
