@@ -1,6 +1,10 @@
 const qs = document.querySelector.bind(document)
+const qsAll = document.querySelectorAll.bind(document)
+
 qs('#menu button').addEventListener('click',showMenu)
 qs('#menu-potfolio button').addEventListener('click',showMenuPortfolio) //ESMITH -- SELECCIONA EL BOTON DEL MENU DEL PORTAFOLIO
+qsAll('.item .btnShow').forEach( e => e.addEventListener('click',showViewerPortfolio))
+qs('#btnCloseViewer').addEventListener('click',hiddenViewerPortfolio)
 
 function showMenu(){
     qs('#menu ul').classList.toggle("h-full")
@@ -18,7 +22,20 @@ function showMenuPortfolio() {
     qs('#menu-potfolio ul').classList.toggle("box-shadow") // LE AGREGAMOS LA SOMBRA
     qs('#menu-potfolio ul').classList.toggle("pt-2") // LE AGREGAMOS UN padding arriba
 }
-
+function showViewerPortfolio(e) {
+    qs('#viewer').classList.add('w-full')
+    qs('#viewer').classList.add('h-screen')
+    setTimeout(() => {
+        qs('#viewer').classList.add('opacity-100')
+    }, 500);
+}
+function hiddenViewerPortfolio(e) {
+    qs('#viewer').classList.remove('opacity-100')
+    setTimeout(() => {
+        qs('#viewer').classList.remove('w-full')
+        qs('#viewer').classList.remove('h-screen')
+    }, 500);
+}
 
 
 window.onscroll = () => {
@@ -45,7 +62,7 @@ var grid = new Muuri('.grid-muuri',{
 window.onload = () => {
 	grid.refreshItems().layout();
 
-    const categories = document.querySelectorAll('#menu-potfolio ul li')
+    const categories = qsAll('#menu-potfolio ul li')
     categories.forEach( (li)=>{
 
         li.addEventListener( 'click' , (e)=> {

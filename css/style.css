@@ -125,6 +125,9 @@
 .box-shadow {
     box-shadow: none;
 }
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
 @media screen and (max-width:767px) {
     #social-media {
         margin-top: 35%;
