@@ -150,18 +150,19 @@
                         <img src="icon/triangulo.svg" alt="triangulo">
                     </button>
                     <ul class="flex text-sm mx-0 lg:mx-10 text-white flex-col sm:flex-row px-5 pt-0 sm:px-0 sm:py-4 absolute sm:static bg-dark right-0 mt-2 sm:mt-0 h-0 sm:h-auto overflow-y-scroll sm:overflow-hidden transitions duration-500"><!--ESMITH -- MODIFICA LA CLASE h-32 por h-0 , pt-2 por pt-0  --- y AGREGA transitions y duration-->
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3 item-select">Todo</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Diseño</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Fotografia</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Illustraciones</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Videos</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Paginas Web</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">App</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3 item-select" data-option="all">Todo</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="design">Diseño</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="photography">Fotografia</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="illustration">Illustraciones</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="video">Videos</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="website">Paginas Web</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="">App</li>
                     </ul>
                 </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-2.5 px-0 sm:px-10 lg:px-24" id="grid-portfolio"> <!--ESMITH-->
-                <div class="h-52 item">
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-2.5 px-0 sm:px-10 lg:px-24" id="grid-portfolio"> -->
+            <div class="grid-muuri" id="grid-portfolio"> <!--ESMITH-->
+                <div class="h-52 item" data-categoria="design">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -171,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="design">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/foto.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -181,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="video">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -201,7 +202,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -211,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
@@ -227,6 +228,8 @@
             </div>
         </div>
     </section>
+    <script src="js/web-animations.min.js"></script>
+    <script src="js/muuri.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

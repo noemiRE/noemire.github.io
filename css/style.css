@@ -200,12 +200,7 @@
 
 @media screen and (max-width:639px) {
     .item-select::before {
-        width: 10px !important;
-        height: 10px !important;
         background-color: var(--primary);
-        border: 0 !important;
-        left: 100%;
-        border-radius: 50%;
     }
     .box-shadow {
         box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
@@ -213,7 +208,47 @@
     /*ESMITH -- QUITAR LINEAS DE MENU PORTAFOLIO*/
     #menu-potfolio ul li::before {
         border: none;
+        width: 10px !important;
+        height: 10px !important;
+        left: 100%;
+        border-radius: 50%;
+        transition: .5s;
     }
 }
 /* w-11/12 sm:w-1/2 md:w-1/2 */
 
+/*
+|CSS--MUURI
+*/
+.grid-muuri {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    transition: .5;
+}
+.item {
+  display: block;
+  position: absolute;
+  width: calc(33.333333% - 20px);
+  margin: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+    .grid-muuri {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .grid-muuri .item {
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 550px) {
+    .grid-muuri {
+        width: 100%;
+    }
+    .grid-muuri .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

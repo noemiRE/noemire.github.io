@@ -29,4 +29,40 @@ window.onscroll = () => {
     }
 }
 
+/*---------
+|JS-MUURI
+------------*/
+var grid = new Muuri('.grid-muuri',{
+    items: '.item',
+    showDuration: 500,
+    showEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+    hideEasing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+    hideDuration: 500,
+    layout: {
+		rounding: false
+	}
+});
+window.onload = () => {
+	grid.refreshItems().layout();
+
+    const categories = document.querySelectorAll('#menu-potfolio ul li')
+    categories.forEach( (li)=>{
+
+        li.addEventListener( 'click' , (e)=> {
+
+            const select = e.target
+            const option = select.getAttribute('data-option')
+
+            qs('.item-select').classList.remove('item-select')
+            qs('#menu-potfolio button span').textContent = select.textContent
+            select.classList.add('item-select')
+            
+            let selectorShow = option=='all' ? '.grid-muuri .item' : 'div[data-categoria="'+option+'"]'
+
+            grid.filter(selectorShow);
+        } )
+
+    } );
+}
+
 
