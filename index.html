@@ -184,72 +184,72 @@
                         <img src="icon/triangulo.svg" alt="triangulo">
                     </button>
                     <ul class="flex text-sm mx-0 lg:mx-10 text-white flex-col sm:flex-row px-5 pt-0 sm:px-0 sm:py-4 absolute sm:static bg-dark right-0 mt-2 sm:mt-0 h-0 sm:h-auto overflow-y-scroll sm:overflow-hidden transitions duration-500"><!--ESMITH -- MODIFICA LA CLASE h-32 por h-0 , pt-2 por pt-0  --- y AGREGA transitions y duration-->
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3 item-select">Todo</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Diseño</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Fotografia</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Illustraciones</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Videos</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">Paginas Web</li>
-                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3">App</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3 item-select" data-option="all">Todo</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="design">Diseño</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="photography">Fotografia</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="illustration">Illustraciones</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="video">Videos</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="website">Paginas Web</li>
+                        <li class="py-2 sm:py-0 border-b sm:border-none border-gray-700 px-3 sm:px-0 mx-0 sm:mx-3" data-option="">App</li>
                     </ul>
                 </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-2.5 px-0 sm:px-10 lg:px-24" id="grid-portfolio"> <!--ESMITH-->
-                <div class="h-52 item">
+            <div class="grid-muuri" id="grid-portfolio"> <!--ESMITH-->
+                <div class="h-52 item" data-categoria="design">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="design">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/foto.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="video">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
                     </div>
                 </div>
-                <div class="h-52 item">
+                <div class="h-52 item" data-categoria="website">
                     <div class="h-full w-full relative">
                         <img class="w-full h-full object-cover object-center" src="img/perfil.jpg" alt="">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
-                            <img class="h3 w-8" src="icon/eye.svg" alt="">
+                            <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
                             <p class="text-xs text-gray-300 leading-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quod!</p>
                         </div>
@@ -261,6 +261,52 @@
             </div>
         </div>
     </section>
+    <section id="viewer" class="w-0 h-0 top-0 opacity-0 px-10 md:px-20 bg-dark-light fixed z-50 transitions duration-500 overflow-hidden">
+        <div class="w-full h-full py-10">
+            <div class="w-8/12 h-full overflow-y-scroll scroll-none flex flex-wrap justify-center float-left">
+                <button id="btnCloseViewer" class="w-10 h-10 absolute bg-gray shadow-2xl inline-flex items-center justify-center rounded-full mt-3 focus:outline-none">
+                    <img src="icon/close.svg" alt="close">
+                </button>
+                <img src="img/1.jpg" alt="" id="imgViewer" class="object-contain w-full">
+            </div>
+            <div class="w-3/12 h-full bg-gray float-right py-5 flex flex-col relative">
+                <div class="w-full inline-flex flex-wrap items-center px-10 py-6 border-l-4 border-green-500">
+                    <div class="w-14 h-14 rounded-full overflow-hidden">
+                        <img src="img/foto.jpg" alt="" class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="ml-3 text-gray-100">
+                        <h3 class="text-md">Noemi Ramos</h3>
+                        <p class="text-xs mt-1"><small>Lorem, ipsum dolor.</small></p>
+                    </div>
+                </div>
+                <div id="infoProject" class="p-10">
+                    <h2 class="text-primary text-xl">Lorem ipsum dolor sit amet.</h2>
+                    <p class="text-gray-100 text-xs mt-5 leading-6 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda tempora totam molestias necessitatibus, pariatur nostrum!</p>
+                </div>
+                <div class="px-10 overflow-hidden">
+                    <a href="#" id="btnNext" class="text-xs text-primary">Siguiente</a>
+                    <div class="w-full h-full">
+                        <img src="img/perfil.jpg" alt="" id="imgNext" class="object-cover object-center w-full h-full">
+                    </div>
+                </div>
+                <div class="absolute right-0 inset-y-0 flex items-center -mr-3">
+                    <div class="flex flex-col items-end space-y-5 bg-gray box-shadow px-2 py-4 rounded-r-md">
+                        <a href="#" class="w-3 h-3 inline-flex ">
+                            <img src="icon/linkedin.svg" alt="" class="object-contain w-full h-full">
+                        </a> 
+                        <a href="#" class="w-3 h-3 inline-flex">
+                            <img src="icon/github.svg" alt="" class="object-contain w-full h-full">
+                        </a> 
+                        <a href="#" class="w-3 h-3 inline-flex">
+                            <img src="icon/instagram.svg" alt="" class="object-contain w-full h-full">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/web-animations.min.js"></script>
+    <script src="js/muuri.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
