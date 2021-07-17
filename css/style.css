@@ -10,6 +10,9 @@
     font-weight: normal;
     src: url('../fonts/Kufam-VariableFont_wght.ttf');
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     font-family: 'kufam regular';
 }
@@ -38,6 +41,9 @@
 }
 .bg-dark-light {
     background-color:rgba(26, 26, 26, .95);
+}
+.bg-dark-900 {
+    background-color: #101010;
 }
 .bg-dark {
     background-color: #1A1A1A;

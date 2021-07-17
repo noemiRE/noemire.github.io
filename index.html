@@ -11,20 +11,20 @@
     <header class="bg-dark md:bg-gradient-to-r from-black via-black to-gray-600 w-full h-screen">
         <nav id="menu" class="flex flex-col md:flex-row justify-between py-8 px-10 md:px-24 fixed w-full z-20 overflow-hidden bg-transparent">
             <div class="flex justify-between">
-              <span class="font-bold text-primary">NR</span>
-              <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtions duration-500"></button> <!--ESMITH --- LA CLASE ES TRANSITIONS CON "S"-->
+                <span class="font-bold text-primary">NR</span>
+                <button id="btn-menu" class="block md:hidden focus:outline-none w-4 h-4 bg-menu bg-contain bg-center bg-no-repeat transtions duration-500"></button> <!--ESMITH --- LA CLASE ES TRANSITIONS CON "S"-->
             </div>
             <ul class="flex items-center space-x-0 md:space-x-5 text-sm text-secundary flex-col md:flex-row h-0 md:h-auto overflow-hidden">
-                <li class="font-bold text-primary py-2 md:py-0 mt-5 md:mt-0"><a href="">Inicio</a></li>
-                <li class="py-2 md:py-0"><a href="">Acerca de mi</a></li>
-                <li class="py-2 md:py-0"><a href="">Habilidades</a></li>
+                <li class="font-bold text-primary py-2 md:py-0 mt-5 md:mt-0"><a href="#init">Inicio</a></li>
+                <li class="py-2 md:py-0"><a href="#about-me">Acerca de mi</a></li>
+                <li class="py-2 md:py-0"><a href="#skills">Habilidades</a></li>
                 <!-- <li class="py-2 md:py-0"><a href="">Servicios</a></li> -->
-                <li class="py-2 md:py-0"><a href="">Portafolio</a></li>
+                <li class="py-2 md:py-0"><a href="#portfolio">Portafolio</a></li>
                 <!-- <li class="py-2 md:py-0"><a href="">Blog</a></li> -->
                 <li class="py-2 md:py-0"><a href="">Contacto</a></li>
             </ul>
         </nav>
-        <section class="px-10 md:px-24 relative pt-10 md:pt-20 min-h-screen">
+        <section id="init" class="px-10 md:px-24 relative pt-10 md:pt-20 min-h-screen">
             <div id="continer-img" class="static md:absolute inset-0 flex justify-center items-start xl:items-center mt-16 md:mt-0">
                 <img id="img-perfil" class="w-auto md:w-1/2  mt-0 md:mt-32" src="img/perfil.jpg" alt="">
             </div>
@@ -91,23 +91,23 @@
                             <img class="object-contain object-center w-full h-full p-4" src="icon/android.svg" alt="">
                         </div>
                     </div>
-                <span class="inline-block py-4 text-white text-sm">Android Studio</span>
+                <span class="inline-block py-4 text-white text-sm">Java/Android</span>
                 </div>
-                <div class="text-center m-5">
+                <!-- <div class="text-center m-5">
                     <div class="bg-gray w-28 h-28 p-2">
                         <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
                             <img class="object-contain object-center w-full h-full p-5" src="icon/flutter.svg" alt="">
                         </div>
                     </div>
-                <span class="inline-block py-4 text-white text-sm">Flutter</span>
-                </div>
+                    <span class="inline-block py-4 text-white text-sm">Flutter</span>
+                </div> -->
                 <div class="text-center m-5">
                     <div class="bg-gray w-28 h-28 p-2">
                         <div class="w-full h-full rounded-full border-4 border-white border-opacity-50">
-                            <img class="object-contain object-center w-full h-full p-3" src="icon/java.svg" alt="">
+                            <img class="object-contain object-center w-full h-full p-3" src="icon/tailwind.svg" alt="">
                         </div>
                     </div>
-                <span class="inline-block py-4 text-white text-sm">Java</span>
+                    <span class="inline-block py-4 text-white text-sm">Tailwind</span>
                 </div>
                 <div class="text-center m-5">
                     <div class="bg-gray w-28 h-28 p-2">
@@ -159,10 +159,10 @@
                     <img class="inline-block"  src="icon/adobeaftereffects.svg" alt="">
                     <span class="block py-4 text-white text-xs">Adobe After Effects cc</span>
                 </div>
-                <div class="text-center w-32 m-5 lg:m-2">
+                <!-- <div class="text-center w-32 m-5 lg:m-2">
                     <img class="inline-block"  src="icon/adobelightroomclassic.svg" alt="">
                     <span class="block py-4 text-white text-xs">Adobe Lightromm cc</span>
-                </div>
+                </div> -->
                 <div class="text-center w-32 m-5 lg:m-2">
                     <img class="inline-block"  src="icon/adobeindesign.svg" alt="">
                     <span class="block py-4 text-white text-xs">Adobe InDesign</span>
@@ -175,7 +175,7 @@
         </div>
     </section>
     <section id="portfolio"  class="min-h-screen w-full flex items-center px-10 md:px-24 bg-dark">
-        <div class="w-full mt-32">
+        <div class="w-full my-32">
             <div class="flex flex-col lg:flex-row items-start lg:items-end py-10">
                 <h2 class="text-2xl font-bold text-white text-center sm:text-left" >Mi portafolio</h2>
                 <div id="menu-potfolio" class="ml-auto sm:mx-auto relative z-10">
@@ -197,7 +197,7 @@
             <div class="grid-muuri" id="grid-portfolio"> <!--ESMITH-->
                 <div class="h-52 item" data-categoria="design">
                     <div class="h-full w-full relative">
-                        <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="">
+                        <img class="w-full h-full object-cover object-center" src="img/1.jpg" alt="" loading="lazy">
                         <div class="absolute bg-black bg-opacity-80 w-full h-full top-0 flex flex-col items-center justify-center text-center p-10">
                             <img class="h3 w-8 btnShow" src="icon/eye.svg" alt="">
                             <h3 class="font-bold text-white py-2">Lorem ipsum dolor sit.</h3>
@@ -305,6 +305,87 @@
             </div>
         </div>
     </section>
+    <footer class="px-10 md:px-20 bg-dark-900 w-full">
+        <section class="flex flex-col">
+            <div class="flex flex-row justify-between py-14">                
+                <div> 
+                    <span class="text-white py-5 inline-block">Redes Sociales</span>
+                    <div class="flex flex-col text-secundary text-sm">
+                        <a href="" class="flex py-2 items-center">
+                            <div class="w-5 h-5 mr-2">
+                                <img src="icon/linkedin.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">Noemi Ramos Enriquez</span>                        
+                            </div>
+                        </a> 
+                        <a href="" class="flex py-2 items-center">
+                            <div class="w-5 h-5 mr-2">
+                                <img src="icon/github.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">noemiRamos</span>
+                            </div>
+                            
+                        </a> 
+                        <a href="" class="flex py-2 items-center">
+                            <div class="w-5 h-5 mr-2">
+                                <img src="icon/instagram.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">@noemiramosenriquez</span>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+                <div> 
+                    <span class="text-white my-5 inline-block">Servicios</span>
+                    <div class="flex flex-col text-secundary text-sm">
+                        <span class="font-thin py-2">Servicio 2</span> 
+                        <span class="font-thin py-2">Servicio 3</span> 
+                        <span class="font-thin py-2">Servicio 1</span> 
+                        <span class="font-thin py-2">Servicio 4</span> 
+                        <span class="font-thin py-2">Servicio 5</span> 
+                    </div>
+                </div>
+                <div> 
+                    <span class="text-white my-5 inline-block">Datos</span>
+                    <div class="flex flex-col text-secundary text-sm">
+                        <a href="" class="flex items-center py-2">
+                            <div class="w-5 h-5 mr-2">
+                                <img src="icon/location.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">Lima, Lince</span>  
+                            </div>
+                        </a> 
+                        <a href="" class="flex items-center py-2">
+                            <div class="w-5 h-5 mr-2">
+                                <img src="icon/mail.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">noemifelicitaramos@gmail.com</span>
+                            </div>
+                            
+                        </a> 
+                        <a href="" class="flex items-center py-2">
+                            <div class="w-5 h-5 mr-2"> 
+                                <img src="icon/phone.svg" alt="" class="object-fill w-full h-full">
+                            </div>
+                            <div>
+                                <span class="font-thin">+51 986 147 015</span>
+                            </div>
+                        </a> 
+                    </div>
+                </div>            
+            </div>
+            <div class="flex flex-col items-center py-5">                
+                <span class="text-white text-base">Noemi RE</span>
+                <span class="w-7 h-0.5 bg-white mt-2 mb-6"></span>
+                <span class="text-secundary text-xs">Derechos Reservados © 2021</span>
+            </div>
+        </section>
+    </footer>
     <script src="js/web-animations.min.js"></script>
     <script src="js/muuri.min.js"></script>
     <script src="js/app.js"></script>
